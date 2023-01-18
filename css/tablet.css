@@ -1,0 +1,76 @@
+/* START NAVBAR */
+@media screen and (max-width: 991px) {
+  #nav-bar .nav-bar-heading {
+    display: none;
+  }
+  #nav-bar .nav-bar-heading + * {
+    border-left-width: 1px;
+  }
+}
+/* END NAVBAR */
+
+/* START ABOUT */
+@media screen and (max-width: 991px) {
+  #about {
+    background: none;
+  }
+  #about .container {
+    grid-template-columns: 1fr;
+  }
+  #about #target {
+    background-color: var(--light-gray);
+  }
+  #about #personal-info {
+    background-color: var(--gray);
+  }
+  #target,
+  #personal-info {
+    padding: 40px 30px;
+  }
+}
+/* END ABOUT */
+
+/* START CERT */
+@media screen and (max-width: 1199px) {
+  .certificates {
+    grid-template-columns: 1fr;
+  }
+  .certificate-item {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 15px;
+    border-bottom: 1px solid var(--yellow);
+    padding-bottom: 15px;
+  }
+  .certificate-item + .certificate-item::before {
+    display: none;
+  }
+  .certificate-separator {
+    display: none;
+  }
+}
+/* END CERT */
+
+/* START PROJECT CHARTER */
+@media screen and (max-width: 1199px) {
+  .project-charter {
+    grid-template-columns: 2fr 1fr;
+  }
+  .project-charter .area-timeline {
+    grid-row: 1 / 5;
+    grid-column: -1 / -2;
+  }
+}
+@media screen and (max-width: 991px) {
+  .project-charter {
+    grid-template-columns: 1fr;
+  }
+  .project-charter .area-timeline {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .project-charter .area-scope {
+    grid-row: 2 / 3;
+  }
+}
+/* END PROJECT CHARTER */
